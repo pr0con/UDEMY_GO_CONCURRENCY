@@ -1,0 +1,5 @@
+1. sync.Waitgroup (2)
+2. sync.Cond	  (2)
+3. sync.Once
+4. sync.Mutex
+5. sync.RWMutex
