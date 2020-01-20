@@ -28,8 +28,6 @@ func (d *data) update(wid string) {
 }
 
 
-
-
 func doWork(wid string, d *data, wg *sync.WaitGroup) {
 	for range time.Tick(time.Second * 2) {
 		d.update(wid)

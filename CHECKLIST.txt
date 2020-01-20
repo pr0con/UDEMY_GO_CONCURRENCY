@@ -1,5 +1,34 @@
+Concurrency vs. Parallelism:
+
+	Concurrency is a property of the code
+	parallelism is a property of the running process
+
+Race Conditions
+	1. when concurrent processes need to be synchronized but are not
+		- no guarantee that process_one will wait for process_two to finish
+
+Atomicity
+	- Atomic means an operation that cannot be divided, into concurrent operations
+		- like declaring the value of a variable
+
+
+Memory Access Synchronization
 1. sync.Waitgroup (2)
 2. sync.Cond	  (2)
 3. sync.Once
 4. sync.Mutex
 5. sync.RWMutex
+
+
+Deadlocks
+	- concurrent process_one relies on process_two <-- two will never finish
+Livelock
+	- 
+Starvation
+
+
+
+Git Hub Private Repo with Go Mod
+	1. Generate a token @ https://github.com/settings/tokens
+	2. $> export GITHUB_TOKEN=your_generated_token 
+	3. $> git config --global url."https://${GITHUB_TOKEN}:x-oauth-basic@github.com/YOURUSERNAME".insteadOf "https://github.com/YOURUSERNAME"
