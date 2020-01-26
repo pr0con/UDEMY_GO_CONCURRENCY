@@ -10,7 +10,7 @@ Race Conditions
 Atomicity
 	- Atomic means an operation that cannot be divided, into concurrent operations
 		- like declaring the value of a variable
-
+		
 
 Memory Access Synchronization
 1. sync.Waitgroup (2)
@@ -20,15 +20,36 @@ Memory Access Synchronization
 5. sync.RWMutex
 
 
+
 Deadlocks
 	- concurrent process_one relies on process_two <-- two will never finish
 Livelock
-	- 
+	- they all just keep spinning
+	
 Starvation
 
 
+CLI: (2)
 
-Git Hub Private Repo with Go Mod
-	1. Generate a token @ https://github.com/settings/tokens
-	2. $> export GITHUB_TOKEN=your_generated_token 
-	3. $> git config --global url."https://${GITHUB_TOKEN}:x-oauth-basic@github.com/YOURUSERNAME".insteadOf "https://github.com/YOURUSERNAME"
+
+
+//SLAVE LANGUAGES,,,
+	#NODEJS
+		- wget latest from nodejs.org
+		- tar xf tarpackagename.tar.gz
+		- rm tarpackage
+		- mv node-something node
+		- ln -s /path2node/node/bin/node /usr/sbin
+		- ln -s /path2node/node/bin/npm /usr/sbin
+	#PHP 7.4
+	- apt-get update && apt-get upgrade
+	- apt-get install software-properties-common
+	- add-apt-repository ppa:ondrej/php
+	- apt-get update
+	- apt-get install php7.4
+	- apt-get install php-pear php7.4-curl php7.4-dev php7.4-gd php7.4-mbstring php7.4-zip php7.4-mysql php7.4-xml
+	
+	#Python 3.8
+	- https://linuxize.com/post/how-to-install-python-3-8-on-ubuntu-18-04/
+	
+	
