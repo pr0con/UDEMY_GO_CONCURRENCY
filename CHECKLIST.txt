@@ -53,3 +53,7 @@ CLI: (2)
 	- https://linuxize.com/post/how-to-install-python-3-8-on-ubuntu-18-04/
 	
 	
+	
+//GIT PRIVATE REPO CONFIG  ::add to  ~/.gitconfig
+[url "https://YOURACCESSTOKEN:x-oauth-basic@github.com/pr0con"]
+insteadOf = https://github.com/pr0con
