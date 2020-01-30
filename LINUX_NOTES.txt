@@ -1,0 +1,28 @@
+linux_001
+=============
+/ = root directory top of tree
+/bin
+	- binary files related to system boot
+/boot
+	- boot files, grub 
+/dev
+	- entries for hardware devices
+/etc
+	- configuration files , nginx etc...
+/home 
+	- other users home folders
+/root
+ 	- root home folder
+/proc
+	- files containing information about running processes
+/sbin
+	- system binaries
+/tmp
+	- temporary files
+/usr
+	- read only user data
+/lib
+	- shared object libraries
+/var 
+	- variable data, logs for instance	
+	

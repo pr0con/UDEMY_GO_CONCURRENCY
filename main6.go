@@ -44,8 +44,7 @@ func getData(d *data) {
 
 func main() {
 	var wg sync.WaitGroup
-	
-	
+		
 	d := newData()
 	d.round["one"] = 0
 	d.round["two"] = 0

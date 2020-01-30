@@ -47,4 +47,3 @@ func main() {
 	//Interfaces therefor govern/force how struct/objects should behave....
 	//Interfaces therefor govern/force how a programs logic should act/operate	
 }
-
