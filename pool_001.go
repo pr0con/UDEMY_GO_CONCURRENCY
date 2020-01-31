@@ -8,6 +8,7 @@ import (
 	"strings"
 )
 
+
 func handleConnections(port string, wg *sync.WaitGroup) {
 	l, err := net.Listen("tcp4", ":"+port); if err != nil { fmt.Println(err); return }
 	defer l.Close()
@@ -16,6 +17,8 @@ func handleConnections(port string, wg *sync.WaitGroup) {
 		for {
 			c, err := l.Accept(); if err != nil { fmt.Println(err); return }
 			fmt.Printf("Serving %s\n", c.RemoteAddr().String())
+			
+			//Blocks :: Challenge cant connect multiple clients :: how to solve
 			for {
 				netData, err := bufio.NewReader(c).ReadString('\n')
 				if err != nil { fmt.Println(err); return }

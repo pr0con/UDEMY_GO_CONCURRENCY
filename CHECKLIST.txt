@@ -18,6 +18,7 @@ Memory Access Synchronization
 3. sync.Once
 4. sync.Mutex
 5. sync.RWMutex
+6. sync.Map
 
 
 
@@ -25,12 +26,7 @@ Deadlocks
 	- concurrent process_one relies on process_two <-- two will never finish
 Livelock
 	- they all just keep spinning
-	
 Starvation
-
-
-CLI: (2)
-
 
 
 //SLAVE LANGUAGES,,,
