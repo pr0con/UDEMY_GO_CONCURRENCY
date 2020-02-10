@@ -45,7 +45,7 @@ func compressFile(filename string, wg *sync.WaitGroup) {
 			_, err = io.Copy(gzout, in)
 			gzout.Close()			
 			
-		}=
+		}
 	
     }
     

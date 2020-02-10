@@ -19,7 +19,7 @@ Memory Access Synchronization
 4. sync.Mutex
 5. sync.RWMutex
 6. sync.Map
-
+7. sync.Pool
 
 
 Deadlocks
@@ -48,8 +48,12 @@ Starvation
 	#Python 3.8
 	- https://linuxize.com/post/how-to-install-python-3-8-on-ubuntu-18-04/
 	
+	#PM2 Install
+	- cd /var/www/node <- or whereever your node directory is not your node project
+	- npm install -g pm2
 	
-	
+	=
 //GIT PRIVATE REPO CONFIG  ::add to  ~/.gitconfig
-[url "https://YOURACCESSTOKEN:x-oauth-basic@github.com/pr0con"]
-insteadOf = https://github.com/pr0con
+[url "https://YOURACCESSTOKEN:x-oauth-basic@github.com/YOURUSER"]
+insteadOf = https://github.com/YOURUSER
+

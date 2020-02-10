@@ -18,8 +18,7 @@ func handleData(c net.Conn, l net.Listener) {
 		temp := strings.TrimSpace(string(netData))
 		if temp == "STOP" { break; }
 		
-		c.Write([]byte("Hi there from server...\n"))
-	
+		c.Write([]byte("Hi there from server...\n"))	
 	}
 	c.Close()
 	l.Close()		
