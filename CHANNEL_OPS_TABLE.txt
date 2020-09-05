@@ -1,0 +1,20 @@
+OPERATION			CHANNEL STATE			RESULT
+1. Read				NIL						BLOCK	(Dead-Lock if all waiting)
+2. Write			NIL						BLOCK
+3. Close			NIL						PANIC
+
+4. Read				Closed					default_value, false, 0
+5. Write			Closed					PANIC
+6. Close			Closed					PANIC
+
+7. Read				Open/Empty				BLOCK
+8. Write			Open/Empty				WRITE	(Empty means slots avail)
+9. Close			Open/Empty				CLOSE  	(reads produce default, #4)
+
+10. Read			Open/Full				VALUE   (or slots contain data)
+11. Write			Open/Full				BLOCK
+12. Close			Open/Full				CLOSE	(reads can continue until drained)
+
+13. Read			Write Only				COMPILE ERROR
+14. Write			Read Only				COMPILE ERROR
+15. Close			Receive Only			COMPILE ERROR

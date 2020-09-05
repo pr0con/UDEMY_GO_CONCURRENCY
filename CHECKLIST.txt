@@ -4,7 +4,7 @@ Concurrency vs. Parallelism:
 	parallelism is a property of the running process
 
 Race Conditions
-	1. when concurrent processes need to be synchronized but are not
+	1. when concurrent processes needs to be synchronized but are not
 		- no guarantee that process_one will wait for process_two to finish
 
 Atomicity
@@ -52,7 +52,7 @@ Starvation
 	- cd /var/www/node <- or whereever your node directory is not your node project
 	- npm install -g pm2
 	
-	=
+	
 //GIT PRIVATE REPO CONFIG  ::add to  ~/.gitconfig
 [url "https://YOURACCESSTOKEN:x-oauth-basic@github.com/YOURUSER"]
 insteadOf = https://github.com/YOURUSER
@@ -60,3 +60,6 @@ insteadOf = https://github.com/YOURUSER
 //ASYNCQ PUBLIC MODULE 
 https://www.youtube.com/watch?v=TIAkt9csksI
 
+
+//Context
+https://www.ardanlabs.com/blog/2019/09/context-package-semantics-in-go.html
